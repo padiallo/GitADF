@@ -1,0 +1,60 @@
+{
+	"name": "OBGYN",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LSAzureBlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "OBGYN_practice_dataset_with_categories.csv",
+				"container": "raw"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "person_id",
+				"type": "String"
+			},
+			{
+				"name": "procedure_date",
+				"type": "String"
+			},
+			{
+				"name": "procedure_concept_id",
+				"type": "String"
+			},
+			{
+				"name": "concept_name",
+				"type": "String"
+			},
+			{
+				"name": "amount",
+				"type": "String"
+			},
+			{
+				"name": "total_paid",
+				"type": "String"
+			},
+			{
+				"name": "provider_id",
+				"type": "String"
+			},
+			{
+				"name": "provider_name",
+				"type": "String"
+			},
+			{
+				"name": "category according to domain expert;",
+				"type": "String"
+			}
+		]
+	}
+}
