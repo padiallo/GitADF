@@ -1,0 +1,9 @@
+{
+	"name": "ADFGitCorbus",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7af32d22-3cce-40c3-9e1a-d4fd53dc31eb",
+		"tenantId": "b3e36c19-f28c-4d0d-b496-8827fe568a51"
+	}
+}
